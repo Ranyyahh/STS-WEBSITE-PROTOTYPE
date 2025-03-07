@@ -32,8 +32,8 @@ body::before {
 
 /* Header Container */
 .container {
-    width: 85.7%;
-    max-width: 1200px;
+    width: 86%;
+    max-width: 1600px;
     background-color: #fff7f0;
     border-radius: 0px;
     padding: 20px 100px;
@@ -103,7 +103,7 @@ body::before {
     width: 30%;
     height: 70vh;
     position: absolute;
-    top: 53%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
