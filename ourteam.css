@@ -25,12 +25,12 @@ html, body {
 }
 
 header {
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 50px 60px 40px 100px;
     display: flex;
-    background-color: #fff7f0 ;
-    height: 15%;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 60px; 
+    background-color: #f8f8f8;
+    height: 85px;
     width: 100%;
     position: relative;
 }
@@ -41,22 +41,37 @@ header {
 }
 
 .logo img {
-    height: 100px;
-    margin-right: 100%;
-    margin-bottom: 40px;
-    border-radius: 80%; 
+    height: 60px; 
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 30%;
 }
 
 nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
     display: flex;
-    list-style: none;
-    gap: 20px;
+    gap: 20px; 
+    align-items: center;
 }
 
+nav ul img {
+    margin-left: 30px;
+    gap: 20px; 
+    width: 35px;  
+    height: 35px; 
+    object-fit: cover;
+}
+
+nav ul img:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
 nav ul li a {
     font-family: 'Poppins', sans-serif;
     color: black;
-    margin-left: 50px;
+    margin-left: 30px;
     padding-bottom: 10px;
     font-size: x-large;
     text-decoration: none;
