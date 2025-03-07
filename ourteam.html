@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ourteam.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About</title>
+</head>
+<body>
+    <section id="home">
+        <div class="upper">
+            <header>
+                <div class="logo" style="display: flex; align-items: center;">
+                    <div id="imglogo" style="margin-right: 10px; margin-top: 32.2px;">
+                        <img src="QCU_MAP_Logo.png" alt="Logo">
+                    </div>
+                    <div style="margin-top:32.2px; padding-left: 20px; padding-right: 20px;">
+                        <h1 style="font-size: xx-large; color: black;"> QUEZON CITY UNIVERSITY </h1>
+                    </div>
+                </div>
+                <nav style="margin-top: 32.2px;">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="javascript:void(0);" onclick="confirmLogout()">Log Out</a></li>
+                        <li>
+                            <button id="menu-icon" class="menu-button" style="font-size: 17px; color: white; background: none; border: none; cursor: pointer; margin-left: 100px; margin-right: 100px;">
+                                ☰
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Sidebar -->
+            <div class="sidebar" id="sidebar" style="position: fixed; top: 0; right: -320px; width: 320px; height: 100%; background: white; box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); transition: right 0.3s ease;">
+                <div class="sidebar-header" style="display: flex; justify-content: flex-end; padding: 10px;">
+                    <button id="close-btn" class="close-btn" style="font-size: 24px; background: none; border: none; cursor: pointer;">×</button>
+                </div>
+                <div class="sidebar-content" style="padding: 20px;">
+                    <h1 style="font-size: 24px; color: #004080;">Hey there!</h1>
+                    <p>We're so glad you found your way to Guess Who. This special online space is created just for Quezon City University students, and it is a place where you can feel safe and supported as you express yourself.</p>
+                    <p>If you have a secret that's been weighing on your heart, a confession you're hesitant to share, or thoughts you wish you could express to someone, you're in the right place. Everyone deserves a safe and welcoming space to share their feelings and experiences. It's important to express yourself without the fear of being judged. Here, you can share your thoughts anonymously, and we want you to know that your privacy truly matters to us. Remember, you're not alone; we're here to listen and support you.</p>
+                    <p>So, come on in and let your voice be heard—we're looking forward to hearing what you say!</p>
+                    <p>All the love, <br><strong>The Team</strong></p>
+                </div>
+            </div>
+
+            <div class="container">
+                <center>
+                    <div class="intro">
+                        <h4>OUR TEAM</h4>
+                        <br>
+
+                        <div class="para">
+                            <div class="Lmembers">
+                                <span> <img src="MARQUEZ.PNG" alt="MARQUEZ"><br> <p>MARQUEZ</p> </span> 
+                                <span> <img src="MATACUBO.PNG" alt="MATACUBO"><br> <p>MATACUBO</p> </span>
+                                <span> <img src="MENDOZA.PNG" alt="MENDOZA"><br> <p>MENDOZA</p> </span>
+                                <span> <img src="MOBE.PNG" alt="MOBE"><br> <p>MOBE</p> </span>
+                            </div>
+
+                            <div class="Mmembers">
+                                <span> <img src="REYES.PNG" alt="REYES"><br> <p>REYES</p> </span>
+                                <span> <img src="OJEDA.PNG" alt="OJEDA"><br> <p>OJEDA</p> </span>
+                            </div>
+
+                            <div class="description">
+                                <p> <span class="indented">We are a team of young website developers from SBIT-1C at Quezon City University, 
+                                    dedicated to creating meaningful online spaces. We proudly create QCU-MAP! A website where visitors can freely explore the campus with ease. 
+                                    With our shared passion, we aim to make this platform a welcoming environment for everyone who is interested in visiting our humble campus. <br><br></span>
+                                    <span class="indented">We’re thrilled to have you here and can’t wait to be part of your exploration!</span> </p> 
+                            </div>
+
+                            <div class="Rmembers">
+                                <span> <img src="PADIT.PNG" alt="PADIT"><br> <p>PADIT</p> </span> 
+                                <span> <img src="PAJOTEA.PNG" alt="PAJOTEA"><br> <p>PAJOTEA</p> </span>
+                                <span> <img src="REOVOCA.jpg" alt="REOVOCA"><br> <p>REOVOCA</p> </span> 
+                                <span> <img src="REVILLA.PNG" alt="REVILLA"><br> <p>REVILLA</p> </span>  
+                            </div>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Open sidebar
+        document.getElementById("menu-icon").addEventListener("click", function () {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.style.right = "0";
+        });
+
+        // Close sidebar
+        document.getElementById("close-btn").addEventListener("click", function () {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.style.right = "-320px";
+        });
+
+        // Placeholder for logout confirmation
+        function confirmLogout() {
+            if (confirm("Are you sure you want to log out?")) {
+                window.location.href = "http://localhost/STS/login.html";
+            }
+        }
+    </script>
+</body>
+</html>

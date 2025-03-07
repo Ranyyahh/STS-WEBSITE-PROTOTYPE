@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none; 
+}
+
+.upper {
+    background: url('MAPS_BACKGROUND.PNG.') no-repeat center center;
+    background-size: cover;
+    width: 100%; 
+    height: 100vh; 
+    overflow: auto;
+}
+
+header {
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 60px 40px 100px;
+    display: flex;
+    background-color: #fff7f0 ;
+    height: 15%;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 100%;
+    margin-bottom: 40px;
+    border-radius: 80%; 
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin-left: 50px;
+    padding-bottom: 10px;
+    font-size: x-large;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.socmed_icons i {
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.socmed_icons i:hover {
+    background-color: rgb(167, 164, 160);
+}
+
+.intro h4 {
+    font-size: 5.5rem;
+    font-style: bold;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    padding-top: 4%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    color:  #f0f0c9; opacity: 50;
+    text-align: left;
+    
+}
+
+.intro h4:hover {
+    color: #ffcf56;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    transform: translateX(100px);
+    transition: transform 0.5s ease;
+}
+
+.para {
+    width: 100%;
+    border-radius: 50px;
+    display: flex;
+}   
+
+.description {
+    text-align: center;
+    text-align: justify;
+    width: 100%;
+    position: absolute;
+    padding-right: 41%;
+    margin-left: 27%;
+    margin-top: 14%;
+}
+
+.intro p {
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 2;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    width: 80%; 
+}
+
+.indented {
+    text-indent: 2em;
+    display: block;
+}
+
+.Lmembers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 5px;
+    width: fit-content; 
+    margin: 0 auto;
+    padding: 0 10px; 
+}.Mmembers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px; 
+    width: fit-content; 
+    margin: 0 auto;
+    padding: 0 10px; 
+}.Rmembers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px; 
+    width: fit-content; 
+    margin: 0 auto;
+    padding: 0 10px;  }
+
+
+.Lmembers span {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}.Mmembers span {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}.Rmembers span {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+
+
+.Lmembers img {
+    width: 100px; 
+    height: 100px;
+    object-fit: cover; 
+    border-radius: 100%;
+    transition: transform 0.2s ease;
+}.Mmembers img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 100%;
+    transition: transform 0.2s ease;
+}.Rmembers img {
+    width: 100px; 
+    height: 100px;
+    object-fit: cover;  
+    border-radius: 100%;
+    transition: transform 0.2s ease; }
+
+
+.Lmembers img:hover {
+    transform: scale(1.5); 
+}.Rmembers img:hover {
+    transform: scale(1.5); 
+}.Mmembers img:hover {
+   transform: scale(1.5); }
+
+
+.Lmembers p {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    display: contents;
+    font-family: 'Poppins', sans-serif;
+}.Rmembers p {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    display: contents;
+    font-family: 'Poppins', sans-serif;
+}.Mmembers p {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    display: contents;
+    font-family: 'Poppins', sans-serif;  }
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo img {
+        height: 30px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    .intro h4 {
+        font-size: 1.5rem;
+    }
+   .image-down img,
+    .image-up img {
+        width: 80px;
+    }
+}
+
+
+/* Side Bar */
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+    padding-bottom: 0px;
+}
+
+
+.menu-button:hover {
+    transform: scale(1.1);
+}
+
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -320px; /* Initially hidden */
+    width: 320px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease; /* Smooth slide animation */
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+
+/* Sidebar when open */
+.sidebar.open {
+    right: 0; /* Slide into view */
+}
+
+
+/* Sidebar header */
+.sidebar-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.close-btn {
+    font-size: 24px;
+    border: none;
+    background: none;
+    color: #555;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+
+.close-btn:hover {
+    color: #ff4d4d;
+    transform: rotate(90deg);
+}
+
+
+/* Sidebar content */
+.sidebar-content {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+
+.sidebar-content h1 {
+    font-size: 24px;
+    color: #004080;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.sidebar-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+.sidebar-content strong {
+    color: #004080;
+}

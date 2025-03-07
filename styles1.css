@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 10px;
+    width: 100%;
+    height: 1.5cm;
+    position: fixed;
+    z-index: 99999;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #e96951;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #e96951;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.techvoc-map {
+    position: relative;
+    display: inline-block;
+    width: 76%; 
+    height: auto; 
+    margin-top: -10px;
+}
+
+.fir-floorbutton {
+    position: absolute;
+    top: 71%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #00000023; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 3em; 
+    cursor: pointer; 
+    border-radius: 5px;
+    width: 76%;
+    height: 160px;
+    color: #f8f8f8;
+}
+
+.fir-floorbutton:hover {
+    background-color: #00000041; 
+}
+
+.sec-floorbutton {
+    position: absolute;
+    top: 49.5%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #00000023; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 3em; 
+    cursor: pointer; 
+    border-radius: 5px;
+    width: 76%;
+    height: 230px;
+    color: #f8f8f8;
+}
+
+.sec-floorbutton:hover {
+    background-color: #00000041; 
+}
+
+.backbutton {
+    position: absolute;
+    top: 20%; 
+    left: 6%; 
+    transform: translate(-50%, -50%); 
+    background-color: #00000023; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 3em; 
+    cursor: pointer; 
+    border-radius: 5px;
+    width: 10%;
+    height: 120px;
+    color: #f8f8f8;
+}
+
+.backbutton:hover {
+    background-color: #00000041; 
+}
