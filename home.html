@@ -19,7 +19,20 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="ourteam.html">About</a></li>
-                <li><a href="login.html"><img src="usericon.png" alt="Userprofile" class="user-icon"></a></li>
+                <li>
+                    <a href="#" onclick="confirmLogout()">
+                        <img src="usericon.png" alt="User Profile" class="user-icon">
+                    </a>
+                </li>
+                
+                <script>
+                    function confirmLogout() {
+                        let confirmAction = confirm("Are you sure you want to log out?");
+                        if (confirmAction) {
+                            window.location.href = "logout.php"; 
+                        }
+                    }
+                </script>
             </ul>
         </nav>
     </header>
@@ -39,25 +52,25 @@
             <div class="features">
                 <div class="feature">
                     <a href="campus-layout.html">
-                        <img src="qcumap.PNG" alt="Campus Layout">
+                        <img src="campust.jpg" alt="Campus Layout">
                         <p>Campus Layout</p>
                     </a>
                 </div>
                 <div class="feature">
                     <a href="building-navigation.html">
-                        <img src="qcumap.PNG" alt="Building Navigation">
+                        <img src="building.jpg" alt="Building Navigation">
                         <p>Building Navigation</p>
                     </a>
                 </div>
                 <div class="feature">
                     <a href="emergency-hotspots.html">
-                        <img src="qcumap.PNG" alt="Emergency Hotspots">
+                        <img src="fire.jpg" alt="Emergency Hotspots">
                         <p>Emergency Hotspots</p>
                     </a>
                 </div>
                 <div class="feature">
                     <a href="evacuation-area.html">
-                        <img src="qcumap.PNG" alt="Evacuation Area">
+                        <img src="evac.jpg" alt="Evacuation Area">
                         <p>Evacuation Area</p>
                     </a>
                 </div>
